@@ -14,7 +14,7 @@ a1.add(200);
 a1.add(300);
 a1.add(400);
 a1.addAll(a);
-Collections.sorIndex;
+Collections.sort(a1);
 System.out.print(a1);
 }
 }
