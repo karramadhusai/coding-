@@ -1,0 +1,34 @@
+import java.util.*;
+class assign1
+{
+public static void main(String args[])
+{
+System.out.println("Enter size");
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();int count=0;int i;
+System.out.println("Enter Values");
+ArrayList<Integer> A=new ArrayList<Integer>();
+for( i=0;i<n;i++)
+{
+A.add(sc.nextInt());
+}
+System.out.println("Enter value which is to be replaced");
+int a=sc.nextInt();
+System.out.println("Enter value to replace ");
+int b=sc.nextInt();
+int c=A.indexOf(a);
+for( i=0;i<n;i++)
+{
+if(A.get(i)==a)
+{
+A.set(c,b);
+System.out.println(A);
+break;
+}
+}
+if(i==n)
+{
+System.out.println("Fail");
+}
+}
+}
