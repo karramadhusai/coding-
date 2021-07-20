@@ -1,0 +1,29 @@
+//Complete this code or write your own from scratch
+ import java.util.*;
+ import java.io.*;
+ class Solution{
+ public static void main(String []argh)
+{
+ Scanner in = new Scanner(System.in); 
+int n = in.nextInt(); 
+//3 HashMap<String,Integer> x=new HashMap<String,Integer>();
+ for(int i = 0; i < n; i++) 
+// 3 times read 
+{ 
+String name = in.next();
+ int phone = in.nextInt();
+ // Write code here
+ x.put(name,phone);
+ }
+ while(in.hasNext())
+ // to read values continously we use
+ { 
+String s = in.next(); 
+//key --> s // Write code here
+ if(x.containsKey(s))
+ System.out.println(s+"="+x.get(s)); 
+else
+ System.out.println("Not found"); 
+} 
+in.close(); 
+} }
